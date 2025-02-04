@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: parent-app
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: '*'
+    server: '*'
+  project: initial-proj
+  source:
+    path: argo-workflows
+    repoURL: 'https://github.com/SrikarManthatti/myargolocalapps.git'
+    targetRevision: 'dev'
