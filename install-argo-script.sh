@@ -8,7 +8,7 @@ CURRDIR=$(pwd)
 
 GITUSER=${USERNAME}
 GITPASSWORD=${GITPASSWD}
-GITREPO="https://github.com/SrikarManthatti/"
+GITREPO=${GITREPO}
 
 kubectl apply -f ${CURRDIR}/namespaces/
 
