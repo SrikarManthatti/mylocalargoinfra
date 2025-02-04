@@ -4,9 +4,9 @@ metadata:
   name: private-repo
   namespace: argocd
   labels:
-    argocd.argoproj.io/secret-type: repository
+    argocd.argoproj.io/secret-type: repo-creds
 stringData:
   type: git
   url: REPLACEPRIVATEREPO
-  password: REPLACEUSERNAME
-  username: REPLACEPASSWORD
+  password: REPLACEPASSWORD
+  username: REPLACEUSERNAME
