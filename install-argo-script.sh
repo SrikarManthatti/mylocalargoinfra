@@ -26,5 +26,7 @@ cat initial_repo.yaml | sed "s|REPLACEPRIVATEREPO|${GITREPO}|g" | sed "s|REPLACE
 
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d > temp_password.txt
 
+kubectl apply -f ${CURRDIR}/App_AppProject
+
 
 
