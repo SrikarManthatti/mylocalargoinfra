@@ -11,6 +11,6 @@ spec:
     server: '*'
   project: initial-proj
   source:
-    path: argo-workflows
+    path: '.'
     repoURL: 'https://github.com/SrikarManthatti/myargolocalapps.git'
     targetRevision: 'dev'
